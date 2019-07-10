@@ -14,7 +14,20 @@
     ghc
     stack
     cabal-install
+    cabal2nix
+    wakatime
+    redshift
   ];
+
+
+
+  # Services
+  services = {
+    redshift = {
+      enable = true;
+      provider = "geoclue2";
+    };
+  };
 
   # Packages configuration
   programs = {

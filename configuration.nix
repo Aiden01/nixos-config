@@ -50,6 +50,18 @@
   ];
 
 
+  # fonts configuration
+  fonts.fonts = with pkgs; [
+    noto-fonts
+    noto-fonts-emoji
+    fira-code
+  ];
+
+  environment.pathsToLink = [
+    "~/.local/bin"
+  ];
+
+
 
 
   # Some programs need SUID wrappers, can be configured further or are
