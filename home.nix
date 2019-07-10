@@ -6,7 +6,7 @@
     wget
     vim
     git
-    #emacs
+    shutter
     firefox
     zsh
     discord
@@ -51,15 +51,5 @@
         theme = "lambda";
       };
     };
-
-    # emacs
-    #emacs = {
-    #  enable = true;
-    #  extraPackages = epkgs: [
-    #    epkgs.nix-mode
-    #    epkgs.elcord
-    #    epkgs.haskell-mode
-    #  ];
-    #};
   };
 }

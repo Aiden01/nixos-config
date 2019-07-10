@@ -55,6 +55,7 @@
     noto-fonts
     noto-fonts-emoji
     fira-code
+    twemoji-color-font
   ];
 
   environment.pathsToLink = [
