@@ -29,7 +29,9 @@
   services = {
     redshift = {
       enable = true;
-      provider = "geoclue2";
+      # montreal
+      latitude = "45.30";
+      longitude = "73.35";
     };
   };
 
