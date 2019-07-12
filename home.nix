@@ -20,6 +20,7 @@
     alacritty
     arc-icon-theme
     arc-theme
+    feh
   ];
 
 
