@@ -18,6 +18,8 @@
     wakatime
     redshift
     alacritty
+    arc-icon-theme
+    arc-theme
   ];
 
 
@@ -29,6 +31,7 @@
       provider = "geoclue2";
     };
   };
+
 
   # Packages configuration
   programs = {
