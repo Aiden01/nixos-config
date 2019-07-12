@@ -17,6 +17,7 @@
     cabal2nix
     wakatime
     redshift
+    alacritty
   ];
 
 
