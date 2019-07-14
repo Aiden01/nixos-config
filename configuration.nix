@@ -50,7 +50,7 @@
   ];
 
   environment.pathsToLink = [
-    "~/.local/bin"
+    "/home/aiden/.local/bin"
     "/libexec"
   ];
 
@@ -105,13 +105,13 @@
     windowManager = {
       i3 = {
         enable = true;
-        # packages to be installed with i3
-        extraPackages = with pkgs; [
-          dmenu
-          i3status
-          i3lock
-          i3blocks
-        ];
+  # packages to be installed with i3
+  extraPackages = with pkgs; [
+    dmenu
+    i3status
+    i3lock
+    i3blocks
+  ];
       };
     };
 
