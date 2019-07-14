@@ -23,6 +23,7 @@
     feh
     rustup
     gcc
+    python36
   ];
 
 
