@@ -101,6 +101,11 @@
       };
     };
 
+    desktopManager = {
+      plasma5.enable = false;
+      xterm.enable = false;
+    };
+
     # i3
     windowManager = {
       i3 = {
