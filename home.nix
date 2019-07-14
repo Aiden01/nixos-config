@@ -21,6 +21,8 @@
     arc-icon-theme
     arc-theme
     feh
+    rustup
+    gcc
   ];
 
 
