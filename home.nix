@@ -27,6 +27,7 @@
     opam
     ocaml
     ocamlPackages.ocamlbuild
+    gprolog
   ];
 
 
