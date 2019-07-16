@@ -26,6 +26,7 @@
     python36
     opam
     ocaml
+    ocamlPackages.ocamlbuild
   ];
 
 
