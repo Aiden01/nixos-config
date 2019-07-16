@@ -24,6 +24,8 @@
     rustup
     gcc
     python36
+    opam
+    ocaml
   ];
 
 
