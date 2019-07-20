@@ -4,11 +4,13 @@
 
 { config, pkgs, ... }:
 
-{
+let
+  env = import ./modules/env.nix {};
+in {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-          "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
+      "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -49,12 +51,7 @@
     twemoji-color-font
   ];
 
-  environment.pathsToLink = [
-    "/home/aiden/.local/bin"
-    "/libexec"
-  ];
-
-
+  environment.pathsToLink = env.path;
 
 
   # Some programs need SUID wrappers, can be configured further or are

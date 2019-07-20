@@ -27,7 +27,13 @@
     opam
     ocaml
     ocamlPackages.ocamlbuild
-    gprolog
+    ocamlPackages.utop
+    neofetch
+    xorg.libX11
+    xorg.xf86inputlibinput
+    xorg.xf86inputsynaptics
+    arc-icon-theme
+    arc-theme
   ];
 
 
