@@ -11,6 +11,7 @@ in {
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
+      ./modules/xmonad.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -104,19 +105,16 @@ in {
     };
 
     # i3
-    windowManager = {
-      i3 = {
-        enable = true;
-        # packages to be installed with i3
-        extraPackages = with pkgs; [
-          dmenu
-          i3status
-          i3lock
-          i3blocks
-        ];
-      };
+    windowManager.i3 = {
+      enable = false;
+      # packages to be installed with i3
+      extraPackages = with pkgs; [
+        dmenu
+        i3status
+        i3lock
+        i3blocks
+      ];
     };
-
   };
 
   # bluetooth
