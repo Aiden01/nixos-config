@@ -13,7 +13,7 @@ in {
       "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
       ./modules/xmonad.nix
       ./modules/i3.nix
-      ./modules/wallpaper.nix
+      ./services/wallpaper.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
