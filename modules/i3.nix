@@ -9,7 +9,7 @@ in {
     enable = mkOption {
       type = types.bool;
       default = false;
-      description = "Wether to enable xmonad";
+      description = "Wether to enable i3";
     };
   };
 

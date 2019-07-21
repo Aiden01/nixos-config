@@ -18,10 +18,10 @@ in {
     services.xserver.windowManager.xmonad = {
       enable = true;
       enableContribAndExtras = true;
-      extraPackages = with haskellPackages; [
-        xmonad-contrib
-        xmonad-extras
-        xmonad
+      extraPackages = haskellPackages: [
+        haskellPackages.xmonad-contrib
+        haskellPackages.xmonad-extras
+        haskellPackages.xmonad
       ];
     };
     services.xserver.windowManager.default = "xmonad";

@@ -12,6 +12,7 @@ in {
       ./hardware-configuration.nix
       "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
       ./modules/xmonad.nix
+      ./modules/i3.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -103,25 +104,13 @@ in {
       plasma5.enable = false;
       xterm.enable = false;
     };
-
-    # i3
-    windowManager.i3 = {
-      enable = false;
-      # packages to be installed with i3
-      extraPackages = with pkgs; [
-        dmenu
-        i3status
-        i3lock
-        i3blocks
-      ];
-    };
   };
 
   # bluetooth
   hardware.bluetooth.enable = true;
   # Allows unfree packages to be installed
   nixpkgs.config.allowUnfree = true;
-
+  customModules.xmonad.enable = true;
   users.users.aiden = {
     isNormalUser = true;
     home = "/home/aiden";
