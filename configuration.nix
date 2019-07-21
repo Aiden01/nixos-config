@@ -13,6 +13,7 @@ in {
       "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
       ./modules/xmonad.nix
       ./modules/i3.nix
+      ./modules/wallpaper.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -110,7 +111,17 @@ in {
   hardware.bluetooth.enable = true;
   # Allows unfree packages to be installed
   nixpkgs.config.allowUnfree = true;
-  customModules.xmonad.enable = true;
+
+  # custom modules
+  customModules = {
+    i3 = {
+      enable = true;
+    };
+
+    wallpaper = {
+      enable = true;
+    };
+  };
   users.users.aiden = {
     isNormalUser = true;
     home = "/home/aiden";
