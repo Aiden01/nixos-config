@@ -34,6 +34,7 @@
     xorg.xf86inputsynaptics
     arc-icon-theme
     arc-theme
+    idrisn
   ];
 
 

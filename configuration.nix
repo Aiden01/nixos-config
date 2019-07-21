@@ -120,6 +120,7 @@ in {
 
     wallpaper = {
       enable = true;
+      path = /home/aiden/.config/wallpapers/wallpaper.jpeg;
     };
   };
   users.users.aiden = {
