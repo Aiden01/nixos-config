@@ -6,7 +6,7 @@
     wget
     vim
     git
-    shutter
+    flameshot
     firefox
     zsh
     discord
@@ -35,6 +35,7 @@
     arc-icon-theme
     arc-theme
     idris
+    terminator
   ];
 
 

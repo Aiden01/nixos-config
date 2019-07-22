@@ -80,6 +80,8 @@ in {
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
+  services.compton.enable = true;
+
   # XServer
   services.xserver = {
     enable = true;

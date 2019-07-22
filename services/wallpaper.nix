@@ -33,13 +33,10 @@ in {
           message = "When option differentWallpapers is set to true, loginScreenPath must be present.";
         }
       ];
-    systemd.user.services.wallpaper = {
-      script = ''
+    services.xserver.displayManager.sessionCommands =
+      ''
       feh --bg-scale ${cfg.path}
       '';
-      wantedBy = ["graphical-session.target"];
-      partOf = ["graphical-session.target"];
-    };
 
     services.xserver.displayManager.lightdm.background = if cfg.differentWallpapers
                                                          then builtins.toString cfg.loginScreenPath
