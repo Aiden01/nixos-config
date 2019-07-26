@@ -54,6 +54,8 @@ in {
 
   environment.pathsToLink = env.path;
 
+  home-manager.useUserPackages = true;
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

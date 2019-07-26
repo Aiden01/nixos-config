@@ -1,6 +1,17 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
+
+with lib;
 
 {
+  imports = [
+    ./dotfiles/terminator
+  ];
+
+  aiden.dotfiles = {
+    terminator.enable = true;
+  };
+
+  
   # Packages
   home.packages = with pkgs; [
     wget
