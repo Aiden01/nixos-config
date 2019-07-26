@@ -4,12 +4,8 @@ with lib;
 
 {
   imports = [
-    ./dotfiles/terminator
+    ../dotfiles
   ];
-
-  aiden.dotfiles = {
-    terminator.enable = true;
-  };
 
   
   # Packages
