@@ -11,9 +11,7 @@ in {
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
-      ./modules/xmonad.nix
-      ./modules/i3.nix
-      ./services/wallpaper.nix
+      ./custom.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -114,18 +112,6 @@ in {
   # Allows unfree packages to be installed
   nixpkgs.config.allowUnfree = true;
 
-  # custom modules
-  customModules = {
-    i3 = {
-      enable = true;
-    };
-
-    wallpaper = {
-      enable = true;
-      path = /home/aiden/.config/wallpapers/wallpaper.jpeg;
-      differentWallpapers = false;
-    };
-  };
   users.users.aiden = {
     isNormalUser = true;
     home = "/home/aiden";

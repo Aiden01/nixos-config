@@ -36,6 +36,7 @@
     arc-theme
     idris
     terminator
+    polybar
   ];
 
 
