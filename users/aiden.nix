@@ -13,9 +13,9 @@ with lib;
     wget
     vim
     git
-    flameshot
     firefox
     zsh
+    alacritty
     discord
     oh-my-zsh
     ghc
@@ -24,7 +24,6 @@ with lib;
     cabal2nix
     wakatime
     redshift
-    alacritty
     arc-icon-theme
     arc-theme
     feh
@@ -42,7 +41,6 @@ with lib;
     arc-icon-theme
     arc-theme
     idris
-    terminator
     polybar
   ];
 

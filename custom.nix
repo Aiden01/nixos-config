@@ -10,7 +10,7 @@
   # custom modules
   customModules = {
     protonvpn = {
-      enable = true;
+      enable = false;
     };
     i3 = {
       enable = true;
